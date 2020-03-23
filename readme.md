@@ -27,6 +27,6 @@ __Проверка__.
 Все действия выполняются на единственной машине, которая поднимаетася через Vagrant 
 1. Clone this repo
 2. vagrant up
-3. Запуск playbook: ansible-playbook -i inventories/staging/ playbooks/nginx_run_role.yml
+3. Запуск playbook из директории с Vagrantfile: _ansible-playbook -i inventories/staging/ playbooks/nginx_run_role.yml_
 4. Проверить касмтомный порт nginx:  netstat -an | grep 8080
 
