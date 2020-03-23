@@ -14,14 +14,14 @@ config.vm.define "vm-ansible" do |subconfig|
 	end
 end
 
-config.vm.define "vm-ansible2" do |subconfig|
-	subconfig.vm.box = "centos/7"
-	subconfig.vm.hostname = "vm-ansible2"
-	subconfig.vm.network :private_network, ip: "192.168.50.12"
-	subconfig.vm.provider "virtualbox" do |vb|
-		vb.memory = "1024"
-		vb.cpus = "1"
-	end
-end
+#config.vm.define "vm-ansible2" do |subconfig|
+#	subconfig.vm.box = "centos/7"
+#	subconfig.vm.hostname = "vm-ansible2"
+#	subconfig.vm.network :private_network, ip: "192.168.50.12"
+#	subconfig.vm.provider "virtualbox" do |vb|
+#		vb.memory = "1024"
+#		vb.cpus = "1"
+#	end
+#end
 
 end
