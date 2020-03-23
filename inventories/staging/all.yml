@@ -1,0 +1,18 @@
+all:
+  children:
+    proxy:
+    db:
+    app:
+  vars:
+    ansible_user: 'vagrant'
+proxy:
+  hosts:
+    staging-nginx-01:
+      ansible_host: 192.168.50.11
+      ansible_port:  22
+      ansible_ssh_private_key_file: ./.vagrant/machines/vm-ansible/virtualbox/private_key
+    staging-nginx-02:
+      ansible_host: 192.168.50.12
+      ansible_port:  22
+      ansible_ssh_private_key_file: /root/otus-linux-lesson10-ansible/.vagrant/machines/vm-ansible2/virtualbox/private_key
+      ansible_ssh_private_key_file: ./.vagrant/machines/vm-ansible2/virtualbox/private_key
