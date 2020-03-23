@@ -4,18 +4,18 @@
 ```sh
 ```
 На одном уровне с папкой roles была созданы папки inventories и playbooks
-В roles/nginx/tasks/main.yml описаны задачи:
+В roles/nginx/tasks/main.yml описаны задачи:  
 - установки epel-release репозитория
 - net-tools для проверки порта через netstat
 - nginx сервера
 - копирования index.html
-- копирования конфигурации default.conf  с кастомным портом
+- копирования конфигурации default.conf  с кастомным портом  
 В roles/nginx/handlers/main.yml описаны обработчики: 
 - старта сервиса nginx
 - рестарта сервиса nginx
-В roles/nginx/templates/ лежат шаблоны: 
+В roles/nginx/templates/ лежат шаблоны:   
 - index.html.j2 - стартовой стратицы сервера
-- default.conf.j2 - конфигурационного файла
+- default.conf.j2 - конфигурационного файла  
 В roles/nginx/vars/main.yml задекларированы переменные: 
 - репозитория
 - кастомного порта nginx
